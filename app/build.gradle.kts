@@ -1,11 +1,12 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-android-extensions")
 }
 
 android {
     namespace = "com.example.singupandsingin"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.singupandsingin"

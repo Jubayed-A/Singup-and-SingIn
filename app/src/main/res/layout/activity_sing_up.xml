@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#50B6E9"
+    tools:context=".SingUp">
+
+<!--    Sing up text code here-->
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+<!--    // user name code here-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        app:helperText="Required"
+        app:helperTextTextColor="#FF0000"
+        android:background="@drawable/gray_background"
+        app:startIconDrawable="@drawable/baseline_person_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Name"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:background="@drawable/gray_background"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--   Phone number Code here -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        app:helperText="Required"
+        app:helperTextTextColor="#FF0000"
+        android:background="@drawable/gray_background"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:background="@drawable/gray_background"
+            android:textSize="20sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!--    user email code here-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        app:helperText="Required"
+        app:helperTextTextColor="#FF0000"
+        android:background="@drawable/gray_background"
+        app:startIconDrawable="@drawable/baseline_person_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/gray_background"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!--    user password code here-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        app:helperText="Required"
+        app:helperTextTextColor="#FF0000"
+        android:background="@drawable/gray_background"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        app:endIconMode="password_toggle"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/gray_background"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!--  Sing Up  Button Code here -->
+
+    <Button
+        android:id="@+id/btnSingUp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Sing Up"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        />
+
+    <!--    sing in if you have an account text code here-->
+
+    <TextView
+        android:id="@+id/texHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sing In,If you have an account"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        />
+
+
+</LinearLayout>
